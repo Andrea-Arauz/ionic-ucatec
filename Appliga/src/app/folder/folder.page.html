@@ -18,4 +18,23 @@
     <strong class="capitalize">{{ folder }}</strong>
     <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>
+</div> "ngIf="folder=='Registro'">
+<form> (ngsubmit)="registrar()">
+  <ion-title>Registro de nuevo usuario</ion-title>
+  <ion-item>
+    <ion-label >Nombre</ion-label>
+    <ion-input name="nombre" [(ngmode)]= "nombre" type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label >Nombre de usuario</ion-label>
+    <ion-input name="username" [(ngmode)]= "username" type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label >Correo electronico</ion-label>
+    <ion-input name="email" [(ngmode)]= "email" type="email"></ion-input>
+  </ion-item>
+</ion-button type= "submit">Registrar nuevo usuario</ion-button>
+</form>
+
+</div>
 </ion-content>

@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Bienvenico a MicroPlay
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+ <ion-item>
+   <ion-input placeholder="Parametro"[(ngModel)]="valor"></ion-input>
+ </ion-item>
+
+
+ <ion-button expand="full" routerLink="'/segunda', valor">
+   Push con routerLink
+ </ion-button>
+
+ <ion-button expand="full" (click)="pushSegunda()">
+  Push con router angular
+</ion-button>
+
+</ion-content>
