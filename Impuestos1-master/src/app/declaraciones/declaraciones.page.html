@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Registro De Impuestos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Numero de ventas</ion-label>
+      <ion-input type="text" [(ngModel)]="numeroCompras"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Monto De Ventas</ion-label>
+      <ion-input type="text" [(ngModel)]="montoVentas"></ion-input>
+      </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Numero De Compras</ion-label>
+      <ion-input type="text" [(ngModel)]="numeroDeCompras"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Monto En Compras</ion-label>
+      <ion-input type="text" [(ngModel)]="numeroEnCompras"></ion-input>
+    </ion-item>
+    <button ion-button block (click)="accion1()">[Calcular Impuesto]</button>
+          <ion-card *ngIf="ocultar1">
+            <ion-card-header>
+              Impuestos A Pagar Iva 13%             
+            </ion-card-header>
+            <ion-card-content>
+              <ion-item>
+                <ion-label position="stacked"></ion-label>
+                <ion-input disabled="true" type="text" [(ngModel)]="impuesto">{{totalPalets}}</ion-input>
+              </ion-item>
+            </ion-card-content>
+          </ion-card>
+
+  </ion-list>
+  <ion-button style="margin-top: 150px;" expand="block" shape="round" color="danger" (click)="addTodo()">Registrar Impuesto</ion-button>
+</ion-content>

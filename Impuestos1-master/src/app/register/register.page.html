@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Nombre</ion-label>
+      <ion-input type="text" [(ngModel)]="nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">NIT</ion-label>
+      <ion-input type="text" [(ngModel)]="nit"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">direccion</ion-label>
+      <ion-input type="text" [(ngModel)]="direccion"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Ciudad</ion-label>
+      <ion-input type="text" [(ngModel)]="ciudad"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Rubro</ion-label>
+      <ion-input type="text" [(ngModel)]="rubro"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="block" shape="round" color="danger" (click)="addTodo()">Registrar</ion-button>
+</ion-content>

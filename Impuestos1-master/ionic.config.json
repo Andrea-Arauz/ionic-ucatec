@@ -1,0 +1,7 @@
+{
+  "name": "simulacroexamen",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
